@@ -7,6 +7,8 @@ import io.jmix.core.metamodel.annotation.JmixEntity;
 import io.jmix.core.metamodel.annotation.JmixProperty;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +17,8 @@ import java.util.UUID;
 /**
  * Сущность Проекта.
  */
-@Data
+@Getter
+@Setter
 @JmixEntity
 @Entity(name = "Project")
 @Table(name = "projects")
